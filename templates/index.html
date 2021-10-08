@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CR Goal Predictor </title>
+</head>
+<body style="background-color:Red;">
+<center>
+
+    <h1 style="text-align: center">Cristiano Ronaldo Goal Predictor</h1>
+    {% if result %}
+        <p>{{ result }}</p>
+
+
+    <form method="post" action="/predict">
+        <label>Match_id</label><br>
+        <input type="text" name="match_id"><br><br>
+
+        <label>Location_x</label><br>
+        <input type="text" name="loc_x"><br><br>
+
+        <label>Location_y</label><br>
+        <input type="text" name="loc_y"><br><br>
+		
+		<label>Remaining time</label><br>
+        <input type="text" name="time_rem"><br><br>
+		
+		<label>Power of shot</label><br>
+        <input type="text" name="power_shot"><br><br>
+		
+		<label>Knockout Match</label><br>
+        <input type="text" name="knockout_mat"><br><br>
+		
+		<label>Season</label><br>
+        <input type="text" name="season"><br><br>
+
+		<label>Seconds Remaining</label><br>
+        <input type="text" name="sec_rem"><br><br>
+
+        <label>Distance of Shot</label><br>
+        <input type="text" name="dis_of_shot"><br><br>
+
+        <label>Area of Shot</label><br>
+        <input type="text" name="area_of_shot"><br><br>
+
+        <label>Shot Basics</label><br>
+        <input type="text" name="shot_b"><br><br>
+
+        <label>Range of Shot</label><br>
+        <input type="text" name="range"><br><br>
+
+        <label>Opponent team name</label><br>
+        <input type="text" name="opponent"><br><br>
+
+        <label>Game Season</label><br>
+        <input type="text" name="season"><br><br>
+
+        <label>Home/Away</label><br>
+        <input type="text" name="home_adv"><br><br>
+
+        <label>Shot Id</label><br>
+        <input type="text" name="shot_id"><br><br>
+
+        <label>Longitude/latitude</label><br>
+        <input type="text" name="loc"><br><br>
+
+        <label>Type of Shot</label><br>
+        <input type="text" name="shot_type"><br><br>
+
+        <label>Type of Combined Shot</label><br>
+        <input type="text" name="comb_shot"><br><br>
+
+        <label>Match Id</label><br>
+        <input type="text" name="matchid"><br><br>
+
+        <label>Team Id</label><br>
+        <input type="text" name="teamid"><br><br>
+
+		
+		
+		
+
+        <input type="submit" value="Predict"><br><br>
+    </form>
+</center>
+</body>
+</html>
